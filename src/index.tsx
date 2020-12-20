@@ -1,5 +1,5 @@
 import React from "react";
 import { render } from "react-dom";
+import { Profile } from "./profile";
 
-const mount = document.getElementById("profile");
-render(<h1>Hello world</h1>, mount);
+render(<Profile />, document.body);
