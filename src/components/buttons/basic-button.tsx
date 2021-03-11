@@ -42,12 +42,12 @@ export const BasicButton: IButton<Props> = ({
           cursor: pointer;
         }
         button:hover {
-          background: ${background?.default || "#333"};
-          color: ${color?.default || "#fff"};
+          background: ${background?.hover || "#333"};
+          color: ${color?.hover || "#fff"};
         }
         button.active {
-          background: ${background?.default || "transparent"};
-          color: ${color?.default || "#333"};
+          background: ${background?.active || "transparent"};
+          color: ${color?.active || "#333"};
           cursor: default;
         }
       `}</style>
