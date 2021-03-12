@@ -21,7 +21,7 @@ export const BasicTabLayout: React.FunctionComponent<Props> = ({
   }
 
   return (
-    <div className="container">
+    <div className="main">
       <div className="tabs">
         {tabs.map((tab, i) => (
           <ButtonType onClick={setTab(i)} active={i === activeTabIndex}>
@@ -37,7 +37,7 @@ export const BasicTabLayout: React.FunctionComponent<Props> = ({
           display: flex;
         }
 
-        .container {
+        .main {
           max-width: 960px;
           padding: 30px;
         }
