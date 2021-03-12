@@ -9,7 +9,7 @@ module.exports = {
       {
         test: /\.(tsx?)$/,
         exclude: /node_modules/,
-        use: ["ts-loader"],
+        use: ["babel-loader"],
       },
     ],
   },
@@ -22,7 +22,9 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new HtmlWebpackPlugin()
+    new HtmlWebpackPlugin({
+      template: "./src/index.html"
+    })
   ],
   devServer: {
     contentBase: path.resolve(__dirname, "./dist"),

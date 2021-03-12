@@ -12,10 +12,13 @@ export const Gallery: React.FunctionComponent<Props> = ({ imageUrls }) => {
       <style jsx>{`
         div {
           display: flex;
+          flex-wrap: wrap;
         }
         span {
+          display: block;
           width: 20%;
-          height: 20%;
+          padding-bottom: 20%;
+          height: 0;
           background: center top no-repeat;
           background-size: cover;
         }
