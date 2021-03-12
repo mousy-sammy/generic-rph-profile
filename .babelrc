@@ -9,5 +9,7 @@
       }
     ]
   ],
-  "plugins": []
+  "plugins": [
+    "styled-jsx/babel"
+  ]
 }
